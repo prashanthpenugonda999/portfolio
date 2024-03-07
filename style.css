@@ -1,13 +1,18 @@
 
 *{
     box-sizing: border-box;
-    font-family: 'poppins','sans-serif';
+    font-family: 'sans-serif','popins';
     margin: 0px;
     padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
     background-color: #080808;
     color: #ffffff;
+    background-image: url("./walper2.jpg");
+    background-size: cover;
 }
 .bg-img{
     width: 100%;
@@ -57,9 +62,123 @@ body{
 span{
     color:#2D3C3F;
 }
+/*-------intro-------*/
+.intro{
+    margin-top: 50px;
+}
 /*--------about-----------*/
-.about-box img{
+.about-image{
+    margin-right: 40px;
+    padding-bottom: 150px;
+    
+}
+.about-image img{
+
     border: 2px solid rgb(219, 165, 41);
     width: 200px;
     height: 200px;
+    
+    
+}
+.about-info{
+    display: flex;
+    align-items: center;
+    padding-top: 10%;
+    
+}
+.resume ul li{
+    list-style: none;
+    margin: 5px;
+    
+
+}
+.resume ul{
+   display: flex;
+}
+.resume ul li a::after{
+    content:'';
+    width: 0%;
+    height: 3px;
+    background:#ff004f;
+    position: absolute;
+    
+    left: 0px;
+    bottom:-5px;
+    transition: 0.5s;
+}
+
+.resume ul li a:hover::after{
+    width: 100%;
+    
+   
+}
+
+
+.resume ul li a{
+text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    margin-right: 50px;
+    
+} 
+.skill-desc{
+  
+    margin-left: 20px;
+    border: 1px solid white;
+}
+.display{
+    display:none;
+}
+
+.resume_data_border{
+    
+    width: 100%;
+    height: 200px;
+}
+/* .......portfolio......... */
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+.projects{
+     
+    height: 200px;
+    width: 200px;
+    border: 1px solid white;
+    margin-right: 30px;
+}
+.projects:hover{
+    border: 2px solid rgb(228, 109, 11);
+    
+    
+
+}
+.projects-div{
+    display: flex;
+   
+    align-items: center;
+    margin-top: 20px;
+}
+/*---------contact-me--------*/
+.myresume a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.myresume{
+    border: 1px solid orange;
+    background-color: #ff004f;
+    width: 15%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-me{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
 }
