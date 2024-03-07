@@ -15,11 +15,24 @@ body{
     background-size: cover;
     background-position: center;
 }
+.vh{
+    height: 100vh;
+}
 
 .navbar{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0px;
+    
+}
+.navcolor{
+    color: #ffffff;
+}
+.navbar{
+    border: 2px solid white;
+    width: 100%;
 }
 .logo{
     width:40px;
@@ -59,9 +72,11 @@ span{
 }
 /*-------intro-------*/
 .intro{
-    margin-top: 50px;
+    position:absolute;
+    top: 80px;
 }
 /*--------about-----------*/
+
 .education{
     border: 1px solid white;
 }
@@ -81,7 +96,7 @@ span{
 .about-info{
     display: flex;
     align-items: center;
-    padding-top: 10%;
+    padding-top: 15%;
     
 }
 .resume ul li{
@@ -134,6 +149,8 @@ text-decoration: none;
 .portfolio{
     display: flex;
     flex-direction: column;
+    padding-top: 10%;
+    
     height: 500px;
 }
 .projects{
@@ -172,8 +189,11 @@ text-decoration: none;
 }
 .contact-me{
     height: 150px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    position: relative;
+    top: 20%;
     
 }

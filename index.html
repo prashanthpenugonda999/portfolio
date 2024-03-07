@@ -15,23 +15,28 @@
   </head>
   <body>
     <div class="bg-img">
-      <div class="container">
-        <navbar class="navbar">
-          <img class="logo" src="./letter-s.png" alt="logo" />
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
-            <li><a href="#Contact-me">Contact Me</a></li>
-          </ul>
-        </navbar>
-        <!--intro section -->
-        <div class="intro">
-          <p>Full Stack Developer</p>
-          <h1>Hi i'm <span>Prashanth</span></h1>
-        </div>
+      <navbar class="navbar">
+        <img class="logo" src="./letter-s.png" alt="logo" />
+        <ul>
+          <li><a onclick="Intro2()" class="navcolor"  href="#vh1">Home</a></li>
+          <li><a onclick="Intro()" class="navcolor"  href="#vh1">About</a></li>
+          <li><a  class="navcolor"  href="#vh2">Portfolio</a></li>
+          <li><a  class="navcolor" href="#vh3">Contact Me</a></li>
+        </ul>
+      </navbar>
+        
+        <div id="vh1"  class="vh">
+          
+          <!--intro section -->
+          
+            <div id="intro" class="intro">
+              <p>Full Stack Developer</p>
+              <h1>Hi i'm <span>Prashanth</span></h1>
+            </div>
+        
         <!--About -->
         <div id="about" class="about">
+        
           <div class="about-info">
             <div class="about-image">
               <img src="" alt="" />
@@ -93,7 +98,10 @@
             </div>
           </div>
         </div>
-        <!-- portfolio -->
+        </div>
+        </div>
+        <div id="vh2" class="vh">
+          <!-- portfolio -->
         <div class="portfolio">
           <h1>My Projects</h1>
           <div id="portfolio" class="projects-div">
@@ -102,7 +110,9 @@
             <div class="projects"></div>
           </div>
         </div>
-        <!-- contact-me -->
+        </div>
+        <div id="vh3" class="vh">
+          <!-- contact-me -->
         <div id="contact-me" class="contact-me">
           <h1>Contact me</h1>
           <p>
@@ -115,6 +125,11 @@
         </div>
       </div>
     </div>
+  </div>
+    
+        
+        
+        
 
     <script src="./js.js"></script>
   </body>
