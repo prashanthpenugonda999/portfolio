@@ -15,49 +15,86 @@
   </head>
   <body>
     <div class="bg-img">
-      <navbar class="navbar">
-        <img class="logo" src="./letter-s.png" alt="logo" />
-        <ul>
-          <li><a onclick="Intro2()" class="navcolor"  href="#vh1">Home</a></li>
-          <li><a onclick="Intro()" class="navcolor"  href="#vh1">About</a></li>
-          <li><a  class="navcolor"  href="#vh2">Portfolio</a></li>
-          <li><a  class="navcolor" href="#vh3">Contact Me</a></li>
-        </ul>
-      </navbar>
-        
+      <div id="vh" class="vh">
+        <navbar class="navbar">
+           <a onclick="Intro2()" href="#vh"><img  style="width: 130px; height:24px;" class="logo" src="./logo4.png" alt="logo" /></a>
+          <ul>
+            <li><a onclick="Intro2()" class="navcolor"  href="#vh">Home</a></li>
+            <li><a onclick="Intro()" class="navcolor"  href="#vh1">About</a></li>
+            <li><a  class="navcolor"  href="#vh2">Portfolio</a></li>
+            <li><a  class="navcolor" href="#vh3">Contact Me</a></li>
+          </ul>
+        </navbar>
+        <!--intro section -->
+          
+        <div id="intro" class="intro">
+          <div class="div1">
+           
+            
+            <h5>Welcome! To</h5>
+            <h1>My <span style="color: blue;">Portfolio</span></h1>
+
+          </div>
+          <div class="div2">
+             <div id="color" class="color">
+
+              </div>
+            <h1>Hi i'm <span style="color: blue;">Prashanth</span></h1>
+            <p>Full Stack Developer</p>
+            <div class="div3">
+              <p><a style="text-decoration: none; color:white" href="#vh1">Swipe&nbsp;Down</a></p>
+              <a style="text-decoration: none; color:white" href="#vh1"><i class="fa-solid fa-circle-down"></i></a>
+            </div>
+            
+
+            
+
+          </div>
+          
+          
+          
+      </div>
+      <!---------image------------>
+
+
+
+
+
+        <div class="images-intro">
+          <img id="img-intro1" src="./png.png" alt="">
+          <img id="img-intro2" src="./img-intro22.png" alt="">
+        </div>
+          
+
+      </div>
+      
         <div id="vh1"  class="vh">
           
-          <!--intro section -->
           
-            <div id="intro" class="intro">
-              <p>Full Stack Developer</p>
-              <h1>Hi i'm <span>Prashanth</span></h1>
-            </div>
+            
         
         <!--About -->
+
         <div id="about" class="about">
         
-          <div class="about-info">
+          <div id="about-info" class="about-info">
             <div class="about-image">
               <img src="" alt="" />
             </div>
             <div class="About-box">
               <h1>About me</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Accusamus, hic molestiae architecto animi labore a consequatur
-                deleniti corrupti maxime quasi beatae dicta porro at deserunt
-                tempore in nobis aliquid ipsum. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Rem, asperiores mollitia, ex eos
-                error dolores optio quia laboriosam dolor voluptatibus, amet
-                magnam nobis incidunt recusandae nostrum dolorem nesciunt
-                ratione hic.
+                A passionate and aspiring python full stack developer with a degree in ECE stream from KLR institue of Engineering college. Proficient in Python, Django,React js,JavaScript,HTML, CSS, MongoDB and SQL. Developed and deployed several web applications as part of projects and personal initiatives. Seeking a python full stack developer role to apply my technical skills and creativity in a dynamic and collaborative environment.</p>
+                <p>
+                I am a skilled full-stack developer with experience in front-end and back-end technologies. I specialize in developing end-to-end applications that provide an optimal user experience
+                With a passion for full-stack development, I am a proficient in designing and developing complex applications with expertise in React Js
+                .As an innovative full-stack developer, I deeply understand best practices and I deliver high-quality products that meet client needs.
               </p>
               <div class="resume">
                 <ul>
-                  <li onclick="Skills()"><a id="link" href="#">SKILLS</a></li>
+                  <li onclick="Skills()"><a id="link">SKILLS</a></li>
                   <li onclick="Education()">
-                    <a id="link2" href="#">EDUCATION</a>
+                    <a id="link2" >EDUCATION</a>
                   </li>
                   <li><a href=""></a></li>
                 </ul>
@@ -68,7 +105,7 @@
                     <li>REACT JS</li>
                     <li>DJANGO</li>
                     <li>PYTHON</li>
-                    <li>JAVASCRIPT/li></li>
+                    <li>JAVASCRIPT</li>
                     <li>MONGODB</li>
                     <li>MY SQL</li>
                     <li>HTML</li>

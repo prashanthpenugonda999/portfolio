@@ -1,5 +1,4 @@
 
-console.log("hi")
 let resume_skills=document.getElementById("skill")
 let resume_education=document.getElementById("ed")
 let link=document.getElementById("link")
@@ -9,12 +8,22 @@ let navbar=document.querySelector(".navbar")
 let navcolor=document.querySelectorAll(".navcolor")
 let intro=document.getElementById("intro")
 let about2=document.getElementById("about")
-console.log(intro)
-console.log(navcolor)
-console.log(navbar)
-navbar.addEventListener("click",nav)
-console.log(resume_education)
-console.log(resume_skills)
+let about_info=document.getElementById("about-info")
+let color=document.getElementById("color")
+// DOMContentLoaded
+window.addEventListener("DOMContentLoaded",()=>{
+    color.classList.add("hovercolor")
+})
+
+window.addEventListener("scroll", ()=>{
+    if (window.scrollY > 100){
+        navbar.style.background ="#212ea0"
+    }
+    else{
+        navbar.style.background ="none"
+    }
+})
+
 
 function Skills(){
     resume_skills.classList.toggle("display")
@@ -48,7 +57,8 @@ function nav(e){
 }
 function Intro(){
     intro.style.display="none"
-    about2.style.padding="3%"
+    
+    about_info.style.classList.add("about-info1")
 
 }
 function Intro2(){

@@ -1,7 +1,10 @@
 
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
     box-sizing: border-box;
-    font-family: 'sans-serif','popins';
+   font-family: "openslab",sans-serif;
     margin: 0px;
     padding: 0px;
 }
@@ -15,6 +18,42 @@ body{
     background-size: cover;
     background-position: center;
 }
+.images-intro img{
+    position: relative;
+    
+}
+#img-intro2{
+    position: absolute;
+    width: 160px;
+    height: 120px;
+    right: 0%;
+    bottom: 0px;
+    z-index: -6;
+    
+    animation: move 10s;
+    animation-iteration-count:2 ;
+}
+@keyframes move{
+    0%{bottom: 10px;right: 0px;}
+   
+    50%{bottom: 50%;right: 50%;}
+   
+    100%{bottom:100% ;right:100%;}
+    
+}
+
+#img-intro1{
+    position: absolute;
+    width: 160px;
+    height: 120px;
+    top: 20%;
+    left: 50%;
+    height: 400px;
+    width: 350px;
+    z-index: -1;
+    
+}
+
 .vh{
     height: 100vh;
 }
@@ -25,13 +64,14 @@ body{
     align-items: center;
     position: fixed;
     top: 0px;
+    z-index: 20;
     
 }
 .navcolor{
     color: #ffffff;
 }
 .navbar{
-    border: 2px solid white;
+    
     width: 100%;
 }
 .logo{
@@ -73,12 +113,97 @@ span{
 /*-------intro-------*/
 .intro{
     position:absolute;
-    top: 80px;
+    top: 30%;
+    left:30%;
 }
+.intro p{
+    /* color: #020308; */
+    color: #ff004f;
+    background: transparent;
+}
+.color{
+    height: 60px;
+    width: 100%;
+    background:#020308;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.intro p, .intro h1{
+    color: #ffffff ;
+
+}
+.hovercolor {
+
+right: 0;
+width: 2px;
+transition: 6s;
+}
+.color2{
+    right: 0;
+    width: 2px;
+    transition: 1s;
+
+}
+.div2{
+    margin-top: 20px;
+}
+.div3{
+    margin-top: 80%;
+    margin-left: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background: rgb(228, 122, 8,0.5) ;
+    height: 30px;
+    width: 120px;
+    border-radius: 5px;
+    
+   
+    
+
+    
+}
+
+.div3 i{
+   
+    animation: blink 1s infinite;
+    
+   
+}
+
+    
+
+@keyframes blink{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+
+
+
+    
+    
+    
+    
+ 
+ 
 /*--------about-----------*/
+
+
 
 .education{
     border: 1px solid white;
+    width: 400px;
+    height: 70%;
+    padding-left: 20px;
+    padding-top: 10px;
 }
 .about-image{
     margin-right: 40px;
