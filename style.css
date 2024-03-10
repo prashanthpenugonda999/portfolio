@@ -137,7 +137,7 @@ span{
 .hovercolor {
 
 right: 0;
-width: 2px;
+width: 0px;
 transition: 4s;
 }
 .color2{
