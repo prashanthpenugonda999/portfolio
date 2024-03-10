@@ -28,6 +28,7 @@ window.addEventListener("scroll", ()=>{
 function Skills(){
     resume_skills.classList.toggle("display")
     link.style.color="red"
+    
     link.style.textDecoration="underline"
     link2.style.textDecoration="none"
     link2.style.color="white"
