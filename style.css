@@ -30,7 +30,8 @@ body{
     bottom: 0px;
     z-index: -6;
     
-    animation: move 10s;
+    animation: move 12s;
+    animation-delay: 3s;
     animation-iteration-count:2 ;
 }
 @keyframes move{
@@ -138,7 +139,7 @@ span{
 
 right: 0;
 width: 0px;
-transition: 4s;
+transition: 6s;
 }
 .color2{
     right: 0;
