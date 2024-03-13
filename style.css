@@ -295,12 +295,14 @@ text-decoration: none;
 }
 .projects{
      
-    height: 200px;
-    width: 200px;
-    border: 1px solid white;
+    height: 250px;
+    width: 250px;
+   
+    position: relative;
+    
     margin-right: 30px;
 }
-.projects:hover{
+.project-img:hover{
     border: 2px solid rgb(228, 109, 11);
     
     
@@ -340,3 +342,36 @@ text-decoration: none;
 #link{
     text-decoration: none;
 }
+/*--------------------projects--------------------*/
+.project-img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.projects a{
+    
+    
+   position: absolute;
+   
+   
+   bottom:10%;
+   left: 24%;
+   text-decoration: none;
+   color: #ffffff;
+   background-color: #0069fd;
+   width: 80px;
+   height: 30px;
+   border-radius: 10px;
+   text-align: center;
+   padding-top: 5px;
+   font-family: sans-serif;
+
+
+    
+}
+.projects a:hover{
+    color: #f95902;
+}
+
