@@ -14,7 +14,7 @@ html{
 body{
     background-color: #080808;
     color: #ffffff;
-    background-image: url("images/pic3.jpg");
+    background-image: url("images/pic111.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -214,11 +214,11 @@ transition: 5s;
     border: 1px solid white;
     width: 400px;
     height: 100%;
-    padding-left: 20px;
-    padding-top: 12px;
+    padding-left: 60px;
+    padding-top: 30px;
 }
 .education p{
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 .about-image{
     margin-right: 40px;
@@ -283,7 +283,7 @@ text-decoration: none;
 .resume_data_border{
     
     width: 100%;
-    height: 200px;
+    height: 180px;
 }
 /* .......portfolio......... */
 .portfolio{
@@ -328,10 +328,12 @@ text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
 }
 .contact-me{
     height: 150px;
     padding-top: 10px;
+    padding-left: 10%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
